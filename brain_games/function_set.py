@@ -26,7 +26,10 @@ def logic_brain_even():
             i += 1
             print('Correct!')
         else:
-            print("'yes' is wrong answer ;(. Correct answer was 'no'.")
-            print(f"Let's try again, {name}!")
-            i = 0
-    print(f'Congratulations, {name}"!')
+            break
+    if i == 3:        
+        print(f'Congratulations, {name}"!')
+    else:
+        print("'yes' is wrong answer ;(. Correct answer was 'no'.")
+        print(f"Let's try again, {name}!")
+
