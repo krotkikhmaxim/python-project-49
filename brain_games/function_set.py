@@ -1,12 +1,14 @@
 import prompt
-import random
+
+
+name = ''
+cor_ans = ''
+ans = ''
+n = ''
 
 
 def main():
     print('Welcome to the Brain Games!')
-
-
-name = ''
 
 
 def welcome():
@@ -15,21 +17,18 @@ def welcome():
     print(f'Hello, {name}!')
 
 
-def logic_brain_even():
+def logic(conditions, predicat):
+    global ans
     i = 0
-    print('Answer "yes" if the number is even, otherwise answer "no".')
     while i < 3:
-        n = random.randrange(0, 100)
-        print(f'Question: {n}')
-        answer = prompt.string('Your answer: ')
-        if n % 2 == 0 and answer == 'yes' or n % 2 != 0 and answer == 'no':
+        conditions()
+        if predicat():
             i += 1
             print('Correct!')
         else:
             break
-    if i == 3:        
+    if i == 3:
         print(f'Congratulations, {name}"!')
     else:
-        print("'yes' is wrong answer ;(. Correct answer was 'no'.")
+        print(f"'{ans}' is wrong answer ;(. Correct answer was '{cor_ans}'.")
         print(f"Let's try again, {name}!")
-
