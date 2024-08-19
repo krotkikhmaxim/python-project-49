@@ -4,10 +4,13 @@ import random
 import prompt
 
 
+task = 'What is the result of the expression?'
+
+
 def main():
     function_set.main()
     function_set.welcome()
-    function_set.logic(conditions_calc, predicat_calc)
+    function_set.logic(conditions_calc, predicat_calc, task)
 
 
 def conditions_calc():

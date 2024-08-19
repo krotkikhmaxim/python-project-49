@@ -17,9 +17,10 @@ def welcome():
     print(f'Hello, {name}!')
 
 
-def logic(conditions, predicat):
+def logic(conditions, predicat, task):
     global ans
     i = 0
+    print(task)
     while i < 3:
         conditions()
         if predicat():

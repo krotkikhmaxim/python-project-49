@@ -4,10 +4,13 @@ import random
 import prompt
 
 
+task = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+
 def main():
     function_set.main()
     function_set.welcome()
-    function_set.logic(conditions_even, predicat_even)
+    function_set.logic(conditions_even, predicat_even, task)
 
 
 def predicat_even():
