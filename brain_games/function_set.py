@@ -29,7 +29,7 @@ def logic(conditions, predicat, task):
         else:
             break
     if i == 3:
-        print(f'Congratulations, {name}"!')
+        print(f'Congratulations, {name}!')
     else:
         print(f"'{ans}' is wrong answer ;(. Correct answer was '{cor_ans}'.")
         print(f"Let's try again, {name}!")
