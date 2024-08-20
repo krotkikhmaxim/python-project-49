@@ -25,7 +25,7 @@ def conditions_progression():
             progression += ' ..'
             function_set.cor_ans = temp
         temp += step
-    print(f'Question: {progression}')
+    print(f'Question:{progression}')
     function_set.ans = prompt.string('Your answer: ')
 
 
