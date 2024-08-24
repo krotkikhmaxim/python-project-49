@@ -21,6 +21,8 @@ def conditions_prime(question):
             cor_ans = 'no'
         else:
             cor_ans = 'yes'
+    else:
+        cor_ans = 'no'
     question.append(f'{n}')
     return cor_ans
 
