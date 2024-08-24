@@ -16,10 +16,8 @@ def logic(conditions, task):
         if str(cor_ans) == str(ans):
             print('Correct!')
         else:
-            break
-    else:
-        if i == 2:
-            print(f'Congratulations, {name}!')
-        else:
             print(f"'{ans}' is wrong answer ;(. Correct answer was '{cor_ans}'.")
             print(f"Let's try again, {name}!")
+            break
+    else:
+        print(f'Congratulations, {name}!')
