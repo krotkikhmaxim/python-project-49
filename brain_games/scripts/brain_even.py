@@ -18,7 +18,7 @@ def conditions_even(question):
     else:
         cor_ans = 'no'
     question.append(f'{n}')
-    return cor_ans 
+    return cor_ans
 
 
 if __name__ == '__main__':

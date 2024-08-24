@@ -22,7 +22,7 @@ def conditions_prime(question):
         else:
             cor_ans = 'yes'
     question.append(f'{n}')
-    return cor_ans 
+    return cor_ans
 
 
 if __name__ == '__main__':

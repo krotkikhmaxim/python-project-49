@@ -18,13 +18,13 @@ def conditions_progression(question):
     progression = ''
     for i in range(0, 10):
         if i != miss:
-            progression +=str(temp) + ' '
+            progression += str(temp) + ' '
         else:
             progression += '.. '
             cor_ans = temp
         temp += step
     question.append(f'{progression}')
-    return cor_ans 
+    return cor_ans
 
 
 if __name__ == '__main__':

@@ -23,7 +23,7 @@ def conditions_calc(question):
     elif z[x] == '*':
         cor_ans = n * n2
     question.append(f'{n} {z[x]} {n2}')
-    return cor_ans 
+    return cor_ans
 
 
 if __name__ == '__main__':

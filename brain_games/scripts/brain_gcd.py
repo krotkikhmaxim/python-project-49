@@ -18,7 +18,7 @@ def conditions_gcd(question):
             cor_ans = i
             break
     question.append(f'{n1} {n2}')
-    return cor_ans 
+    return cor_ans
 
 
 if __name__ == '__main__':
