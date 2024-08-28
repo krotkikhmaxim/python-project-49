@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
 from brain_games import function_set
+from brain_games import const
 import random
 
 
-task = 'What is the result of the expression?'
-
-
 def main():
-    function_set.main()
-    function_set.logic(conditions_calc, task)
+    function_set.logic(conditions_calc, const.task_calc)
 
 
 def conditions_calc(question):

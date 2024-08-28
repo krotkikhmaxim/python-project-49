@@ -1,13 +1,10 @@
 from brain_games import function_set
+from brain_games import const
 import random
 
 
-task = 'What number is missing in the progression?'
-
-
 def main():
-    function_set.main()
-    function_set.logic(conditions_progression, task)
+    function_set.logic(conditions_progression, const.task_progression)
 
 
 def conditions_progression(question):

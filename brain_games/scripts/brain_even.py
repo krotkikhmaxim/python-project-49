@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
 from brain_games import function_set
+from brain_games import const
 import random
 
 
-task = 'Answer "yes" if the number is even, otherwise answer "no".'
-
-
 def main():
-    function_set.main()
-    function_set.logic(conditions_even, task)
+    function_set.logic(conditions_even, const.task_even)
 
 
 def conditions_even(question):

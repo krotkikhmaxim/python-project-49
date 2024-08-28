@@ -1,30 +1,10 @@
 from brain_games import function_set
-import random
-
-
-task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+from brain_games import const
+from brain_games.games.prime import conditions_prime
 
 
 def main():
-    function_set.main()
-    function_set.logic(conditions_prime, task)
-
-
-def conditions_prime(question):
-    n = random.randrange(0, 100)
-    k = 0
-    if n > 1:
-        for i in range(1, n + 1):
-            if n % i == 0:
-                k += 1
-        if k > 2:
-            cor_ans = 'no'
-        else:
-            cor_ans = 'yes'
-    else:
-        cor_ans = 'no'
-    question.append(f'{n}')
-    return cor_ans
+    function_set.logic(conditions_prime, const.task_prime)
 
 
 if __name__ == '__main__':

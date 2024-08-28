@@ -1,15 +1,13 @@
 import prompt
-
-
-def main():
-    print('Welcome to the Brain Games!')
+from brain_games import const
 
 
 def logic(conditions, task):
     question = []
+    print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!\n{task}')
-    for i in range(3):
+    for i in range(const.iterations):
         cor_ans = conditions(question)
         print(f'Question: {question.pop()}')
         ans = prompt.string('Your answer: ')
