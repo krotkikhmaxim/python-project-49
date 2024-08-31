@@ -1,16 +1,19 @@
 import random
+from brain_games.aux_func import stack_result
 
 
-def conditions_calc(question):
-    z = ['+', '-', '*']
-    n = random.randrange(0, 100)
-    n2 = random.randrange(0, 100)
-    x = random.randrange(0, 3)
-    if z[x] == '+':
-        cor_ans = n + n2
-    elif z[x] == '-':
-        cor_ans = n - n2
-    elif z[x] == '*':
-        cor_ans = n * n2
-    question.append(f'{n} {z[x]} {n2}')
-    return cor_ans
+TASK_CALC = 'What is the result of the expression?'
+
+
+def func_calc():
+    operators = ['+', '-', '*']
+    num1 = random.randrange(0, 100)
+    num2 = random.randrange(0, 100)
+    index_oper = random.randrange(0, 3)
+    if operators[index_oper] == '+':
+        cor_ans = num1 + num2
+    elif operators[index_oper] == '-':
+        cor_ans = num1 - num2
+    elif operators[index_oper] == '*':
+        cor_ans = num1 * num2
+    return stack_result(f'{num1} {operators[index_oper]} {num2}', cor_ans)

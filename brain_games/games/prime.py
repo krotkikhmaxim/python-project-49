@@ -1,18 +1,21 @@
 import random
+from brain_games.aux_func import stack_result
 
 
-def conditions_prime(question):
-    n = random.randrange(0, 100)
-    k = 0
-    if n > 1:
-        for i in range(1, n + 1):
-            if n % i == 0:
-                k += 1
-        if k > 2:
+TASK_PRIME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
+def func_prime():
+    num = random.randrange(0, 100)
+    сount_div = 0
+    if num > 1:
+        for i in range(1, num + 1):
+            if num % i == 0:
+                сount_div += 1
+        if сount_div > 2:
             cor_ans = 'no'
         else:
             cor_ans = 'yes'
     else:
         cor_ans = 'no'
-    question.append(f'{n}')
-    return cor_ans
+    return stack_result(f'{num}', cor_ans)

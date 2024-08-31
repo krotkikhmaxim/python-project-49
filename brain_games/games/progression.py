@@ -1,7 +1,11 @@
 import random
+from brain_games.aux_func import stack_result
 
 
-def conditions_progression(question):
+TASK_PROGRESSION = 'What number is missing in the progression?'
+
+
+def func_progression():
     start = random.randrange(0, 100)
     step = random.randrange(1, 11)
     miss = random.randrange(0, 9)
@@ -14,5 +18,4 @@ def conditions_progression(question):
             progression += '.. '
             cor_ans = temp
         temp += step
-    question.append(f'{progression}')
-    return cor_ans
+    return stack_result(f'{progression}', cor_ans)

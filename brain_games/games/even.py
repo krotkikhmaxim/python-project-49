@@ -1,11 +1,14 @@
 import random
+from brain_games.aux_func import stack_result
 
 
-def conditions_even(question):
-    n = random.randrange(0, 100)
-    if n % 2 == 0:
+TASK_EVEN = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+
+def func_even():
+    num = random.randrange(0, 100)
+    if num % 2 == 0:
         cor_ans = 'yes'
     else:
         cor_ans = 'no'
-    question.append(f'{n}')
-    return cor_ans
+    return stack_result(f'{num}', cor_ans)
