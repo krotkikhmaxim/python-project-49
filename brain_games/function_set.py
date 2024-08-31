@@ -4,11 +4,12 @@ from brain_games import const
 
 def logic(conditions, task):
     question = []
-    print('Welcome to the Brain Games!')
+    print(const.WELCOME)
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!\n{task}')
-    for i in range(const.iterations):
-        cor_ans = conditions(question)
+    for _ in range(const.ITERATIONS):
+        question = conditions()
+        cor_ans = question.pop()
         print(f'Question: {question.pop()}')
         ans = prompt.string('Your answer: ')
         if str(cor_ans) == str(ans):
