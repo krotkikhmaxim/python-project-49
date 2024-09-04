@@ -1,6 +1,6 @@
 from brain_games import function_set
-from brain_games.games.gcd import func_gcd, TASK_GCD
+from brain_games.games import gcd
 
 
 def main():
-    function_set.logic(func_gcd, TASK_GCD)
+    function_set.logic(gcd.conditions, gcd.TASK)

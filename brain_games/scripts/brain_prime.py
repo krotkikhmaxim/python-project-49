@@ -1,6 +1,6 @@
 from brain_games import function_set
-from brain_games.games.prime import func_prime, TASK_PRIME
+from brain_games.games import prime
 
 
 def main():
-    function_set.logic(func_prime, TASK_PRIME)
+    function_set.logic(prime.conditions, prime.TASK)

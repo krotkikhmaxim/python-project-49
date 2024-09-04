@@ -1,16 +1,19 @@
 import prompt
-from brain_games import const
+
+
+WELCOME = 'Welcome to the Brain Games!'
+
+NUMBER_OF_ROUNDS = 3
 
 
 def logic(conditions, task):
     question = []
-    print(const.WELCOME)
+    print(WELCOME)
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!\n{task}')
-    for _ in range(const.ITERATIONS):
-        question = conditions()
-        cor_ans = question.pop()
-        print(f'Question: {question.pop()}')
+    for _ in range(NUMBER_OF_ROUNDS):
+        question, cor_ans = conditions()
+        print(f'Question: {question}')
         ans = prompt.string('Your answer: ')
         if str(cor_ans) == str(ans):
             print('Correct!')

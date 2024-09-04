@@ -1,6 +1,6 @@
 from brain_games import function_set
-from brain_games.games.even import func_even, TASK_EVEN
+from brain_games.games import even
 
 
 def main():
-    function_set.logic(func_even, TASK_EVEN)
+    function_set.logic(even.conditions, even.TASK)
