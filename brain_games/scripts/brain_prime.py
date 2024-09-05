@@ -3,4 +3,4 @@ from brain_games.games import prime
 
 
 def main():
-    function_set.logic(prime.conditions, prime.TASK)
+    function_set.logic(prime)

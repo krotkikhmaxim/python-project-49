@@ -3,4 +3,4 @@ from brain_games.games import even
 
 
 def main():
-    function_set.logic(even.conditions, even.TASK)
+    function_set.logic(even)

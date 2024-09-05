@@ -3,4 +3,4 @@ from brain_games.games import calc
 
 
 def main():
-    function_set.logic(calc.conditions, calc.TASK)
+    function_set.logic(calc)
