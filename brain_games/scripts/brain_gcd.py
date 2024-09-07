@@ -3,4 +3,4 @@ from brain_games.games import gcd
 
 
 def main():
-    function_set.logic(gcd)
+    function_set.play(gcd)

@@ -1,7 +1,7 @@
 import random
 
 
-TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):
@@ -18,7 +18,7 @@ def is_prime(num):
         return False
 
 
-def conditions():
+def generate_round_conditions():
     num = random.randrange(0, 100)
     if is_prime(num):
         cor_ans = 'yes'

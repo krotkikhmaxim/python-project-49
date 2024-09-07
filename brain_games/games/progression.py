@@ -1,10 +1,10 @@
 import random
 
 
-TASK = 'What number is missing in the progression?'
+DESCRIPTION = 'What number is missing in the progression?'
 
 
-def conditions():
+def generate_round_conditions():
     start = random.randrange(0, 100)
     step = random.randrange(1, 11)
     miss = random.randrange(0, 9)

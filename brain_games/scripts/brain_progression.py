@@ -3,4 +3,4 @@ from brain_games.games import progression
 
 
 def main():
-    function_set.logic(progression)
+    function_set.play(progression)

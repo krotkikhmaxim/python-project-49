@@ -6,12 +6,12 @@ WELCOME = 'Welcome to the Brain Games!'
 NUMBER_OF_ROUNDS = 3
 
 
-def logic(game):
+def play(game):
     print(WELCOME)
     name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!\n{game.TASK}')
+    print(f'Hello, {name}!\n{game.DESCRIPTION}')
     for _ in range(NUMBER_OF_ROUNDS):
-        question, cor_ans = game.conditions()
+        question, cor_ans = game.generate_round_conditions()
         print(f'Question: {question}')
         ans = prompt.string('Your answer: ')
         if str(cor_ans) == str(ans):

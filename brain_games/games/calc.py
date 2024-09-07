@@ -1,10 +1,10 @@
 import random
 
 
-TASK = 'What is the result of the expression?'
+DESCRIPTION = 'What is the result of the expression?'
 
 
-def conditions():
+def generate_round_conditions():
     operators = ['+', '-', '*']
     num1 = random.randrange(0, 100)
     num2 = random.randrange(0, 100)

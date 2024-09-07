@@ -1,7 +1,7 @@
 import random
 
 
-TASK = 'Find the greatest common divisor of given numbers.'
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def get_gcd(num1, num2):
@@ -10,7 +10,7 @@ def get_gcd(num1, num2):
             return i
 
 
-def conditions():
+def generate_round_conditions():
     num1 = random.randrange(0, 100)
     num2 = random.randrange(0, 100)
     cor_ans = get_gcd(num1, num2)
